@@ -1,0 +1,256 @@
+[{
+  "_id": {
+    "$oid": "62363e42388cd426fa1a2fa7"
+  },
+  "aluno": "Fernando",
+  "data": {
+    "$date": "2022-03-19T20:34:10.010Z"
+  },
+  "curso": {
+    "nome": "Ciência da Computação"
+  },
+  "notas": [
+    9,
+    7.8,
+    8
+  ],
+  "skills": [
+    {
+      "nome": "Python",
+      "nivel": "Avançado"
+    },
+    {
+      "nome": "Banco de Dados",
+      "nivel": "Avançado"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "62364e01388cd426fa1a2fab"
+  },
+  "aluno": "Guilherme Dantas",
+  "data": {
+    "$date": "2022-03-19T21:41:21.277Z"
+  },
+  "curso": {
+    "nome": "Programação para Internet"
+  },
+  "notas": [
+    7,
+    8.5,
+    10
+  ]
+},{
+  "_id": {
+    "$oid": "62364fb5388cd426fa1a2fac"
+  },
+  "aluno": "Angela Souza",
+  "data": {
+    "$date": "2022-03-19T21:48:37.181Z"
+  },
+  "curso": {
+    "nome": "Programação para Internet"
+  },
+  "notas": [
+    7.4,
+    9.5,
+    9.4
+  ]
+},{
+  "_id": {
+    "$oid": "6236501b388cd426fa1a2fad"
+  },
+  "aluno": "Guilherme Dantas",
+  "data": {
+    "$date": "2022-03-19T21:50:19.500Z"
+  },
+  "curso": {
+    "nome": "Programação para Internet"
+  },
+  "notas": [
+    7,
+    8.5,
+    10,
+    9.5,
+    4.2
+  ]
+},{
+  "_id": {
+    "$oid": "62365426388cd426fa1a2faf"
+  },
+  "aluno": "William Douglas",
+  "data": {
+    "$date": "2022-03-19T22:07:34.524Z"
+  },
+  "curso": {
+    "nome": "Programação para internet"
+  },
+  "notas": [
+    6.4,
+    3.5,
+    6.4,
+    6.7
+  ],
+  "localizacao": {
+    "endereco": "Rua alternativa, 1223",
+    "coordinates": [
+      -20.388008,
+      -54.577545
+    ],
+    "type": "Point"
+  }
+},{
+  "_id": {
+    "$oid": "623698d140be6edf627b16e6"
+  },
+  "aluno": "Jair Rodrigues",
+  "data_nascimento": {
+    "$date": "1981-07-19T03:00:00Z"
+  },
+  "curso": {
+    "nome": "História"
+  },
+  "notas": [
+    6,
+    7,
+    8,
+    5.5
+  ]
+},{
+  "_id": {
+    "$oid": "623698d840be6edf627b16e7"
+  },
+  "aluno": "Bruna Marques",
+  "data_nascimento": {
+    "$date": "1995-03-16T03:00:00Z"
+  },
+  "curso": {
+    "nome": "História"
+  },
+  "notas": [
+    10,
+    9.7,
+    9.2,
+    9
+  ]
+},{
+  "_id": {
+    "$oid": "6236a23ac4325eb0a562e584"
+  },
+  "aluno": "Rodrigo",
+  "localizacao": {
+    "type": "Point",
+    "coordinates": [
+      -20.388008,
+      -54.577546
+    ]
+  }
+},{
+  "_id": {
+    "$oid": "6236a23ac4325eb0a562e585"
+  },
+  "aluno": "Paula",
+  "localizacao": {
+    "type": "Point",
+    "coordinates": [
+      -20.36389,
+      -54.572113
+    ]
+  }
+},{
+  "_id": {
+    "$oid": "6236a23ac4325eb0a562e586"
+  },
+  "aluno": "Fernanda",
+  "localizacao": {
+    "type": "Point",
+    "coordinates": [
+      -20.362981,
+      -54.589102
+    ]
+  }
+},{
+  "_id": {
+    "$oid": "6236a23ac4325eb0a562e587"
+  },
+  "aluno": "Angelina",
+  "localizacao": {
+    "type": "Point",
+    "coordinates": [
+      -20.393017,
+      -54.565923
+    ]
+  }
+},{
+  "_id": {
+    "$oid": "6236a23ac4325eb0a562e588"
+  },
+  "aluno": "Felicity",
+  "localizacao": {
+    "type": "Point",
+    "coordinates": [
+      -20.371926,
+      -54.561802
+    ]
+  }
+},{
+  "_id": {
+    "$oid": "6236a23ac4325eb0a562e589"
+  },
+  "aluno": "Gabriela",
+  "localizacao": {
+    "type": "Point",
+    "coordinates": [
+      -20.353915,
+      -54.571803
+    ]
+  }
+},{
+  "_id": {
+    "$oid": "6236a23ac4325eb0a562e58a"
+  },
+  "aluno": "Ana",
+  "localizacao": {
+    "type": "Point",
+    "coordinates": [
+      -20.388263,
+      -54.591023
+    ]
+  }
+},{
+  "_id": {
+    "$oid": "6236a23ac4325eb0a562e58b"
+  },
+  "aluno": "Larissa",
+  "localizacao": {
+    "type": "Point",
+    "coordinates": [
+      -20.301829,
+      -54.561729
+    ]
+  }
+},{
+  "_id": {
+    "$oid": "6236a23ac4325eb0a562e58c"
+  },
+  "aluno": "Guilherme",
+  "localizacao": {
+    "type": "Point",
+    "coordinates": [
+      -20.361803,
+      -54.562801
+    ]
+  }
+},{
+  "_id": {
+    "$oid": "6236a23ac4325eb0a562e58d"
+  },
+  "aluno": "Rodrigo",
+  "localizacao": {
+    "type": "Point",
+    "coordinates": [
+      -20.363891,
+      -54.571993
+    ]
+  }
+}]
