@@ -1,0 +1,399 @@
+{
+	"info": {
+		"_postman_id": "8ae20a18-dbe5-4001-85af-6597e3dffc87",
+		"name": "DB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5984/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5984/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5984",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5984/all_dbs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5984/_all_dbs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5984",
+					"path": [
+						"_all_dbs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "produtos",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5984/produtos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5984",
+					"path": [
+						"produtos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST - Produtos",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5984/produtos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5984",
+					"path": [
+						"produtos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - Produtos cadastrados",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Nintendo Wii\",\r\n    \"preco\": 1199.90\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5984/produtos/_all_docs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5984",
+					"path": [
+						"produtos",
+						"_all_docs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - Retornando os prds",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Nintendo Wii\",\r\n    \"preco\": 1199.90\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5984/produtos/_all_docs?include_docs=true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5984",
+					"path": [
+						"produtos",
+						"_all_docs"
+					],
+					"query": [
+						{
+							"key": "include_docs",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - Doc by ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Nintendo Wii\",\r\n    \"preco\": 1199.90\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5984/produtos/824fa9463cbe6ee6935d72d593005c4a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5984",
+					"path": [
+						"produtos",
+						"824fa9463cbe6ee6935d72d593005c4a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT - Doc by ID",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": \"824fa9463cbe6ee6935d72d593005c4a\",\r\n    \"_rev\": \"1-2a736ccc94abec01639ec43ffeaa200d\",\r\n    \"nome\": \"Nintendo Wii\",\r\n    \"preco\": 1199.9\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5984/produtos/824fa9463cbe6ee6935d72d593005c4a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5984",
+					"path": [
+						"produtos",
+						"824fa9463cbe6ee6935d72d593005c4a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE - Deletanto via id e rev",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Nintendo Wii\",\r\n    \"preco\": 1199.90\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5984/produtos/824fa9463cbe6ee6935d72d593005c4a?rev=2-e610ea3974bac7bee6c2e58f109bcafd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5984",
+					"path": [
+						"produtos",
+						"824fa9463cbe6ee6935d72d593005c4a"
+					],
+					"query": [
+						{
+							"key": "rev",
+							"value": "2-e610ea3974bac7bee6c2e58f109bcafd"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE - Deletanto db",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Nintendo Wii\",\r\n    \"preco\": 1199.90\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5984/produtos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5984",
+					"path": [
+						"produtos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
