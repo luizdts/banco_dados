@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "7761081c-fcb0-4265-87be-528f1acd273c",
+		"name": "Firebase",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST Firebase",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Playstation 5\",\r\n    \"preco\": 5000.00,\r\n    \"estoque\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cursodb2-2ffdf-default-rtdb.firebaseio.com/produtos.json",
+					"protocol": "https",
+					"host": [
+						"cursodb2-2ffdf-default-rtdb",
+						"firebaseio",
+						"com"
+					],
+					"path": [
+						"produtos.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Firebase",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Playstation 5\",\r\n    \"preco\": 5000.00,\r\n    \"estoque\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cursodb2-2ffdf-default-rtdb.firebaseio.com/produtos.json",
+					"protocol": "https",
+					"host": [
+						"cursodb2-2ffdf-default-rtdb",
+						"firebaseio",
+						"com"
+					],
+					"path": [
+						"produtos.json"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
