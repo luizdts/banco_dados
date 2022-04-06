@@ -6,6 +6,13 @@ public class Utils {
 	
 	static Scanner teclado = new Scanner(System.in);
 	
+	public static void conectar() {
+		System.out.println("Conectando...");
+	}
+	
+	public static void desconectar() {
+		System.out.println("Desconectando...");
+	}
 	public static void listar() {
 		System.out.println("Listando produtos...");
 	}
